@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+  background: #b46505;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 12px;
+  margin-right: 10px;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #f4a75e;
+}
+
+button {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ff443e;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  padding: 10px;
+  position: relative;
+  white-space: nowrap;
+}
+
+span {
+  flex-grow: 1;
+  font-size: 18px;
+  color: black;
+}
+
+.update-icon,
+.delete-icon {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.update-icon {
+  right: 70px;
+}
+
+.delete-icon {
+  right: 10px;
+}
+
+.update-icon:hover,
+.delete-icon:hover {
+  background-color: #ff443e;
+}
+
+li:nth-child(even) {
+  background-color: #ffb366;
+}
+
+li:nth-child(odd) {
+  background-color: #ff944d;
+}
